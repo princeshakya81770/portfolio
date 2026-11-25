@@ -9,6 +9,10 @@
 </head>
 <body>
 
+<div class="profile-image">
+    <img src="prince.jpg.jpeg" alt="Prince Shakya">
+</div>
+
     <header>
         <nav>
             <h2>Prince<span>.</span></h2>
@@ -87,28 +91,28 @@
 </body>
 </html>
 
-<scrip>
-// Welcome message
-console.log("Welcome to Prince Shakya's Portfolio!");
-
-// Button click interaction
-const button = document.querySelector(".btn");
-
-button.addEventListener("click", function() {
-    console.log("Contact section opened!");
-});
-
-// Dynamic footer year
-document.querySelector("footer p").textContent =
-    "© " + new Date().getFullYear() +
-    " Prince Shakya | All Rights Reserved";
-  </style>
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+.profile-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #38bdf8;
+    box-shadow: 0 0 30px #38bdf8;
+    margin: 30px auto;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 body {
